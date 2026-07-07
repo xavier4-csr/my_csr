@@ -2,8 +2,6 @@
 // 📝 EDIT THIS FILE TO UPDATE YOUR PORTFOLIO CONTENT
 // ============================================================
 
-import cvAsset from "@/assets/luhayi-cv.pdf.asset.json";
-
 export const site = {
   // ---------- Profile / Hero ----------
   profile: {
@@ -104,14 +102,14 @@ export const site = {
       description: "E-business web application exploring online commerce flows — product catalog, transactions and management dashboards.",
       tags: ["PHP", "MySQL", "Web"],
       live: "#",
-      code: "https://github.com/xavier4-csr/e-Business",
+      code: "https://github.com/xavier4-csr/e-Business.git",
       gradient: "from-amber-500 to-rose-500",
     },
     {
       title: "Mindful Task Flow",
       description: "A focused task-management app for organizing work into mindful flows — create, track and complete tasks with a clean UI.",
       tags: ["React", "TypeScript", "Tailwind"],
-      live: "#",
+      live: "https://task-flow40.lovable.app",
       code: "https://github.com/xavier4-csr/mindful-task-flow-40",
       gradient: "from-fuchsia-500 to-violet-500",
     },
@@ -120,7 +118,7 @@ export const site = {
       description: "RESTful blog API built with Django REST Framework — posts, authors, comments and authentication endpoints.",
       tags: ["Django", "DRF", "PostgreSQL"],
       live: "#",
-      code: "https://github.com/mainasm/django-blogsite-api",
+      code: "https://github.com/mainasm/django-blogsite-api.git",
       gradient: "from-sky-500 to-indigo-500",
     },
     {
@@ -128,7 +126,7 @@ export const site = {
       description: "Cash / payments platform prototype exploring digital wallets, transfers and transaction tracking.",
       tags: ["Fintech", "Web"],
       live: "#",
-      code: "https://github.com/xavier4-csr/T-cash_platform",
+      code: "https://github.com/xavier4-csr/T-cash_platform.git",
       gradient: "from-teal-500 to-emerald-500",
     },
     {
@@ -148,7 +146,7 @@ export const site = {
     email: "david.luhayi@strathmore.edu",
     phone: "+254 112 641 278",
     location: "Nairobi, Kenya",
-    cvUrl: cvAsset.url,
+    cvUrl: "/luhayi-cv.pdf",
   },
 
   // ---------- Socials ----------

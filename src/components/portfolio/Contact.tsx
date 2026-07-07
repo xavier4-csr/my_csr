@@ -89,7 +89,7 @@ export function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="mt-1 w-full rounded-lg bg-background/60 border border-border px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition"
-                placeholder="Jane Doe"
+                placeholder="Your name"
               />
             </label>
             <label className="block">
@@ -99,7 +99,7 @@ export function Contact() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="mt-1 w-full rounded-lg bg-background/60 border border-border px-3 py-2 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/30 transition"
-                placeholder="jane@example.com"
+                placeholder="username@example.com"
               />
             </label>
           </div>
