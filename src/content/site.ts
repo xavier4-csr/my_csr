@@ -2,7 +2,6 @@
 // 📝 EDIT THIS FILE TO UPDATE YOUR PORTFOLIO CONTENT
 // ============================================================
 
-import avatarAsset from "@/assets/david-luhayi.jpg.asset.json";
 import cvAsset from "@/assets/luhayi-cv.pdf.asset.json";
 
 export const site = {
@@ -12,7 +11,8 @@ export const site = {
     name: "Luhayi David Eshipira",
     shortName: "Luhayi.",
     initials: "DL",
-    avatarUrl: avatarAsset.url,
+    // Static public image, served directly from /public on deploy
+    avatarUrl: "/david-luhayi.jpg",
     roles: ["Full-Stack Developer", "UI Engineer", "Problem Solver"],
     tech: ["React", "Django", "Laravel", "Next.js"],
     tagline:

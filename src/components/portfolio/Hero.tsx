@@ -115,7 +115,7 @@ export function Hero() {
             <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full p-[3px] bg-gradient-to-br from-primary to-purple-500 glow-brand">
               <div className="w-full h-full rounded-full bg-background grid place-items-center overflow-hidden">
                 {site.profile.avatarUrl ? (
-                  <img src={site.profile.avatarUrl} alt={site.profile.fullName} className="w-full h-full object-cover rounded-full" />
+                  <img src={site.profile.avatarUrl} alt={site.profile.fullName} className="w-full h-full object-cover object-center rounded-full" />
                 ) : (
                   <span className="text-6xl sm:text-7xl md:text-8xl font-bold text-gradient-brand">
                     {site.profile.initials}
