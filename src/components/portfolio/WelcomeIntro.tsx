@@ -34,7 +34,9 @@ export function WelcomeIntro() {
           <div className="absolute inset-0 -z-10 bg-grid opacity-60" />
           <motion.div
             className="absolute w-[40rem] h-[40rem] rounded-full blur-3xl -z-10"
-            style={{ background: "radial-gradient(circle, oklch(0.65 0.22 295 / 0.35), transparent 70%)" }}
+            style={{
+              background: "radial-gradient(circle, oklch(0.65 0.22 295 / 0.35), transparent 70%)",
+            }}
             initial={{ scale: 0.6, opacity: 0 }}
             animate={{ scale: 1.2, opacity: 1 }}
             transition={{ duration: 1.6, ease: "easeOut" }}

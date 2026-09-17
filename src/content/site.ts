@@ -1,74 +1,68 @@
 // ============================================================
-// 📝 EDIT THIS FILE TO UPDATE YOUR PORTFOLIO CONTENT
+// Edit this file to update the public portfolio content.
 // ============================================================
 
 export const site = {
-  // ---------- Profile / Hero ----------
   profile: {
-    fullName: "David Luhayi",
+    fullName: "David Luhayi Eshipira",
     name: "Luhayi David Eshipira",
     shortName: "Luhayi.",
     initials: "DL",
-    // Static public image, served directly from /public on deploy
     avatarUrl: "/david-luhayi.jpg",
-    roles: ["Full-Stack Developer", "UI Engineer", "Problem Solver"],
+    roles: ["Full-Stack Developer", "UI Engineer", "Product Builder"],
     tech: ["React", "Django", "Laravel", "Next.js"],
     tagline:
-      "Business Information Technology student and full-stack developer crafting innovative, functional and user-friendly web experiences.",
-    badge: "Welcome to my portfolio",
+      "Business Information Technology student and full-stack developer building responsive web products, business tools, and clear digital experiences.",
+    badge: "Open to internships, junior roles, and freelance work",
   },
 
-  // ---------- About ----------
   about: {
     heading: "About",
     paragraphs: [
-      "I'm a Business Information Technology student at Strathmore University with a strong foundation in programming, web development and accounting. I love turning ideas into polished digital products — from full-stack web apps to clean marketing sites.",
-      "Beyond code, I bring real-world experience in customer service, cash handling and project support, which sharpens how I collaborate, communicate and ship work that matters.",
+      "I'm a Business Information Technology student at Strathmore University with a strong foundation in programming, web development, databases, and accounting. I enjoy turning real problems into polished, practical products — from full-stack web apps to focused marketing sites.",
+      "My experience in customer service, cash handling, and project support has strengthened how I communicate, collaborate, and think about the people using what I build. I care about clean interfaces, maintainable code, and shipping work that is useful beyond the demo.",
     ],
     details: {
       location: "Nairobi, Kenya",
-      experience: "2+ years",
+      experience: "2+ years building for web",
       availability: "Open to opportunities",
     },
   },
 
-  // ---------- Technology ----------
   technologies: [
-    { name: "Django",     slug: "django",       color: "092E20" },
-    { name: "React",      slug: "react",        color: "61DAFB" },
-    { name: "PHP Laravel", slug: "laravel",     color: "FF2D20" },
-    { name: "Next.js",    slug: "nextdotjs",    color: "FFFFFF" },
+    { name: "Django", slug: "django", color: "092E20" },
+    { name: "React", slug: "react", color: "61DAFB" },
+    { name: "PHP Laravel", slug: "laravel", color: "FF2D20" },
+    { name: "Next.js", slug: "nextdotjs", color: "FFFFFF" },
   ],
 
-  // ---------- Experience ----------
   experience: [
     {
       role: "App Developer",
       org: "Strathmore Conference Web",
-      period: "",
+      period: "2025 – present",
       description:
-        "Designed and built a conference web app for Strathmore — handles event info, sessions and attendee-facing pages with a fast, responsive UI.",
+        "Designed and built an attendee-facing conference web experience for event information, sessions, and responsive navigation. Focused on clear information architecture and a fast mobile experience.",
       link: "https://strath-conference-web.vercel.app/",
     },
     {
       role: "Web Developer",
       org: "DropEx Logistics",
-      period: "",
+      period: "2025 – present",
       description:
-        "Built the DropEx Logistics website — a clean, conversion-focused company site showcasing services, coverage and contact channels for a logistics business.",
+        "Built a production company website that presents logistics services, coverage, and contact pathways in a clear, conversion-focused experience for a growing business.",
       link: "https://dropexlogistics.com/",
     },
     {
       role: "Web Developer",
       org: "Freelance & Personal Projects",
-      period: "",
+      period: "2024 – present",
       description:
-        "Responsive marketing sites, landing pages and small business websites with a focus on performance and clean UI.",
-      link: "#",
+        "Create responsive marketing sites, landing pages, and web applications while building practical experience across React, Django, Laravel, databases, and deployment.",
+      link: "#projects",
     },
   ],
 
-  // ---------- Skills ----------
   skills: [
     { name: "HTML / CSS", level: 90 },
     { name: "Java", level: 90 },
@@ -79,77 +73,102 @@ export const site = {
     { name: "Tailwind", level: 75 },
   ],
 
-  // ---------- Projects ----------
   projects: [
     {
       title: "Strathmore Conference Web",
-      description: "Conference platform for Strathmore showcasing sessions, speakers and event info with a modern responsive UI.",
-      tags: ["React", "Vercel"],
+      description:
+        "A conference platform that helps attendees find event information, sessions, and key programme details through a focused responsive interface.",
+      contribution:
+        "Designed and built the attendee-facing experience, from page structure through responsive implementation.",
+      outcome: "Live event experience",
+      status: "Client project",
+      tags: ["React", "Responsive UI", "Vercel"],
       live: "https://strath-conference-web.vercel.app/",
-      code: "https://github.com/xavier4-csr",
+      code: null,
       gradient: "from-indigo-500 to-pink-500",
+      featured: true,
     },
     {
       title: "DropEx Logistics",
-      description: "Production company website for a logistics business — services, coverage areas and contact, optimized for conversions.",
-      tags: ["Web", "Marketing Site"],
+      description:
+        "A production business website that makes logistics services, coverage areas, and contact pathways easy to understand for prospective customers.",
+      contribution:
+        "Built the public-facing site with a focus on content hierarchy, responsive layouts, and conversion-focused calls to action.",
+      outcome: "Live business website",
+      status: "Client project",
+      tags: ["Web", "Marketing Site", "Responsive UI"],
       live: "https://dropexlogistics.com/",
-      code: "#",
+      code: null,
       gradient: "from-emerald-500 to-cyan-500",
+      featured: true,
     },
     {
       title: "e-Business Platform",
-      description: "E-business web application exploring online commerce flows — product catalog, transactions and management dashboards.",
-      tags: ["PHP", "MySQL", "Web"],
-      live: "#",
-      code: "https://github.com/xavier4-csr/e-Business.git",
+      description:
+        "An e-business application exploring product catalogues, transaction flows, and management views for a small online commerce experience.",
+      contribution:
+        "Implemented the core web experience and explored how product and transaction data can move through a practical business workflow.",
+      outcome: "Working prototype",
+      status: "Personal project",
+      tags: ["PHP", "MySQL", "Commerce"],
+      live: null,
+      code: "https://github.com/xavier4-csr/e-Business",
       gradient: "from-amber-500 to-rose-500",
+      featured: true,
     },
     {
       title: "Mindful Task Flow",
-      description: "A focused task-management app for organizing work into mindful flows — create, track and complete tasks with a clean UI.",
+      description:
+        "A focused task-management app for organising work into calm, visible flows — create, track, and complete tasks through a clean interface.",
+      contribution:
+        "Built the frontend experience and interaction model with reusable components and a responsive layout.",
+      outcome: "Live product prototype",
+      status: "Personal project",
       tags: ["React", "TypeScript", "Tailwind"],
       live: "https://task-flow40.lovable.app",
       code: "https://github.com/xavier4-csr/mindful-task-flow-40",
       gradient: "from-fuchsia-500 to-violet-500",
-    },
-    {
-      title: "Django Blogsite API",
-      description: "RESTful blog API built with Django REST Framework — posts, authors, comments and authentication endpoints.",
-      tags: ["Django", "DRF", "PostgreSQL"],
-      live: "#",
-      code: "https://github.com/mainasm/django-blogsite-api.git",
-      gradient: "from-sky-500 to-indigo-500",
+      featured: true,
     },
     {
       title: "T-Cash Platform",
-      description: "Cash / payments platform prototype exploring digital wallets, transfers and transaction tracking.",
-      tags: ["Fintech", "Web"],
-      live: "#",
-      code: "https://github.com/xavier4-csr/T-cash_platform.git",
+      description:
+        "A cash and payments platform prototype exploring digital wallets, transfers, and transaction tracking.",
+      contribution: "Explored the product structure and user flows for a digital payments concept.",
+      outcome: "Prototype",
+      status: "Personal project",
+      tags: ["Fintech", "Web", "Product flows"],
+      live: null,
+      code: "https://github.com/xavier4-csr/T-cash_platform",
       gradient: "from-teal-500 to-emerald-500",
+      featured: false,
     },
     {
-      title: "Portfolio Website",
-      description: "Responsive personal portfolio showcasing work, skills and contact info.",
-      tags: ["React", "Tailwind", "Framer Motion"],
-      live: "https://luhayi-portfolio.vercel.app/",
-      code: "https://github.com/xavier4-csr/luhayi-portfolio",
-      gradient: "from-rose-500 to-orange-500",
+      title: "Django Blogsite API",
+      description:
+        "A learning project exploring RESTful blog endpoints for posts, authors, comments, and authentication with Django REST Framework.",
+      contribution:
+        "Used the project to study API structure, authentication, and relational content workflows.",
+      outcome: "Learning project",
+      status: "Learning project — source not published",
+      tags: ["Django", "DRF", "PostgreSQL"],
+      live: null,
+      code: null,
+      gradient: "from-sky-500 to-indigo-500",
+      featured: false,
     },
   ],
 
-  // ---------- Contact ----------
   contact: {
-    heading: "Let's build something together.",
-    blurb: "Have a project in mind, or just want to say hi? Drop me a message below.",
+    heading: "Let's build something useful.",
+    blurb:
+      "Have a project, internship, or collaboration in mind? Send a message and I will get back to you.",
     email: "david.luhayi@strathmore.edu",
     phone: "+254 112 641 278",
     location: "Nairobi, Kenya",
     cvUrl: "/luhayi-cv.pdf",
   },
 
-  // ---------- Socials ----------
   socials: {
     github: "https://github.com/xavier4-csr",
     linkedin: "https://www.linkedin.com/in/david-luhayi-153b02330",

@@ -10,7 +10,10 @@ export function Skills() {
       </h2>
       <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6">
         {site.skills.map((skill) => (
-          <div key={skill.name} className="rounded-xl border border-border bg-card/40 backdrop-blur px-5 py-4">
+          <div
+            key={skill.name}
+            className="rounded-xl border border-border bg-card/40 backdrop-blur px-5 py-4"
+          >
             <div className="flex justify-between mb-2 text-sm">
               <span className="font-medium">{skill.name}</span>
               <span className="text-primary">{skill.level}%</span>

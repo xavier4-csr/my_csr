@@ -6,7 +6,8 @@ export function About() {
     <Section id="about" className="max-w-6xl mx-auto px-6">
       <div className="grid md:grid-cols-3 gap-10 items-start">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          {site.about.heading}<span className="text-gradient-brand">.</span>
+          {site.about.heading}
+          <span className="text-gradient-brand">.</span>
         </h2>
         <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
           {site.about.paragraphs.map((p, i) => (

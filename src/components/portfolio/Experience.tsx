@@ -29,7 +29,7 @@ export function Experience() {
             </div>
             <p className="text-sm text-primary mt-1">{item.org}</p>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-            {item.link && item.link !== "#" && (
+            {item.link && (
               <a
                 href={item.link}
                 target="_blank"
