@@ -1,54 +1,97 @@
 # David Luhayi Eshipira — Portfolio
 
-This repository contains David Luhayi Eshipira's personal portfolio. It is a TanStack Start, React, TypeScript, and Tailwind application deployed at [my-csr-red.vercel.app](https://my-csr-red.vercel.app/).
+[![Quality checks](https://github.com/xavier4-csr/my_csr/actions/workflows/quality.yml/badge.svg)](https://github.com/xavier4-csr/my_csr/actions/workflows/quality.yml)
+[![Live portfolio](https://img.shields.io/badge/live%20portfolio-my--csr--red.vercel.app-7c3aed?logo=vercel&logoColor=white)](https://my-csr-red.vercel.app/)
 
-## What the site presents
+A fast, accessible personal portfolio for **David Luhayi Eshipira**, a Nairobi-based Business Information Technology student and full-stack developer. The site presents selected client work, personal projects, experience, skills, résumé, and contact pathways.
 
-The portfolio introduces David as a Nairobi-based Business Information Technology student and full-stack developer. It includes selected client and personal projects, technology areas, experience, skills, a résumé download, and contact pathways.
+**Live site:** [my-csr-red.vercel.app](https://my-csr-red.vercel.app/) · **GitHub profile:** [xavier4-csr](https://github.com/xavier4-csr) · **LinkedIn:** [David Luhayi Eshipira](https://www.linkedin.com/in/david-luhayi-153b02330)
 
-## Local development
+## Repository navigation
 
-Install the project dependencies and start the development server:
+Start with the document that matches what you want to do:
+
+| I want to...                      | Read                                                    |
+| --------------------------------- | ------------------------------------------------------- |
+| Understand the app structure      | [Architecture guide](docs/architecture.md)              |
+| Update profile or project content | [Content editing guide](docs/content-guide.md)          |
+| Run, validate, or deploy the site | [Development and deployment guide](docs/development.md) |
+| Understand the featured work      | [Project index](docs/projects.md)                       |
+| Contribute or report a problem    | [Contributing guide](CONTRIBUTING.md)                   |
+
+## Highlights
+
+- Responsive portfolio experience built with React and TypeScript.
+- TanStack Start routing with Vite and Vercel Build Output deployment.
+- Centralized content model in [`src/content/site.ts`](src/content/site.ts).
+- Accessible navigation, skip link, keyboard-friendly project actions, and labeled contact form.
+- Selected work cards that distinguish client projects, personal projects, prototypes, and learning projects.
+- Static résumé, profile image, `robots.txt`, and `sitemap.xml` in [`public/`](public/).
+- Automated formatting, lint, typecheck, and production-build checks through GitHub Actions.
+
+## Tech stack
+
+| Layer                 | Tools                                               |
+| --------------------- | --------------------------------------------------- |
+| Application           | React 19, TypeScript, TanStack Start                |
+| Styling               | Tailwind CSS 4, custom CSS tokens, `tw-animate-css` |
+| Interaction           | Framer Motion, Lucide React, Sonner                 |
+| Build and deployment  | Vite, Nitro, Vercel                                 |
+| Data and integrations | TanStack Query, optional Supabase integration       |
+
+## Quick start
+
+Requirements: Node.js 20+ and npm.
 
 ```bash
+git clone https://github.com/xavier4-csr/my_csr.git
+cd my_csr
 npm install
 npm run dev
 ```
 
-The application is served by Vite during development. The project requires Node.js and npm.
+Open the local URL printed by Vite. Use `Ctrl+C` to stop the development server.
 
-## Useful commands
+## Quality checks
+
+Run the same checks used by the repository workflow before opening a pull request:
 
 ```bash
-npm run dev       # Start the local development server
-npm run build     # Create the production build
-npm run preview   # Preview the production build
-npm run lint      # Run ESLint and Prettier checks
+npm run format:check
+npm run lint
+npm run typecheck
+npm run build
 ```
 
-## Updating portfolio content
+`npm run build` emits the Vercel Build Output API into `.vercel/output`. The generic `npm run preview` script is retained from the starter template; for everyday local work, use `npm run dev`.
 
-Most public copy is centralized in [`src/content/site.ts`](src/content/site.ts). Update the profile, about text, experience, skills, projects, contact details, and social links there. Keep every project link truthful. Use `null` when a live demo or source repository is not publicly available rather than adding a placeholder URL.
+## Content and assets
 
-Featured projects are rendered from entries with `featured: true`. Each selected project should include a clear description, your contribution, truthful status, outcome or evaluation, technology tags, and verified links where available.
+The public portfolio content is intentionally centralized in [`src/content/site.ts`](src/content/site.ts). Featured projects use `featured: true`. Keep project status and links truthful: use `null` when a demo or source repository is not public instead of adding a placeholder URL.
 
-The profile image and résumé live in [`public/`](public/). If either asset changes, keep the filenames in `site.ts` synchronized.
+Static assets are stored in [`public/`](public/):
+
+- [`david-luhayi.jpg`](public/david-luhayi.jpg) — profile image.
+- [`luhayi-cv.pdf`](public/luhayi-cv.pdf) — résumé download.
+- [`robots.txt`](public/robots.txt) and [`sitemap.xml`](public/sitemap.xml) — crawlability files.
+
+See the [content editing guide](docs/content-guide.md) before changing public copy.
 
 ## Deployment
 
-The canonical deployment is `https://my-csr-red.vercel.app`. The repository includes `vercel.json` for the production build configuration. Before deploying, verify the build locally and check the production homepage, résumé, project links, `/robots.txt`, and `/sitemap.xml`.
+The canonical production URL is [my-csr-red.vercel.app](https://my-csr-red.vercel.app/). Vercel should build the `main` branch with:
 
-## Release checklist
+```text
+Build command: npm run build
+Output directory: .vercel/output
+```
 
-Before publishing a change:
+See [docs/development.md](docs/development.md) for deployment checks and troubleshooting.
 
-1. Run `npm install` and confirm the lockfile is synchronized.
-2. Run `npm run lint`.
-3. Run `npm run build`.
-4. Check the homepage at desktop and mobile widths.
-5. Test keyboard navigation, the résumé link, social links, project links, and contact path.
-6. Confirm that metadata describes David and not a template or third-party preview.
+## Project principles
 
-## Project status
+This portfolio favors **specific evidence over a large project list**, truthful project provenance, accessible interaction, and small changes that are easy to review. Do not publish confidential client information or invent performance, usage, revenue, or user metrics.
 
-Some work is client-owned or a prototype. The portfolio labels provenance and availability so visitors can distinguish live client projects, personal projects, and learning projects. Do not publish confidential client information or claim outcomes that have not been measured.
+## License and contact
+
+This is a personal portfolio repository. The portfolio content and résumé are personal materials; ask before reusing them. For collaboration or opportunities, use the contact details on the [live portfolio](https://my-csr-red.vercel.app/#contact).

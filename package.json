@@ -11,7 +11,9 @@
     "deploy": "vercel",
     "deploy:prod": "vercel --prod",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write README.md CONTRIBUTING.md docs src package.json",
+    "format:check": "prettier --check README.md CONTRIBUTING.md docs src",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
